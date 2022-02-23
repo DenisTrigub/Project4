@@ -2,10 +2,10 @@
 #include<time.h>
 using namespace std;
 
-
-void Foo(int arr[],const int size = 10)
+template <typename T>
+void Foo(T arr[],const T size = 10)
 {
-	for (int i = 0; i < size; i++)
+	for (T i = 0; i < size; i++)
 	{
 		arr[i] = rand() % 10;
 		cout << endl;
