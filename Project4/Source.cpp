@@ -6,7 +6,8 @@ template <typename T>
 
 int Rand(T x)
 {
-	x =  rand() % 1000 - 250;
+
+	x =  rand() % 1000 ;
 	return x;
 }
 
@@ -47,8 +48,10 @@ int main()
 
 		case 1:
 		{
+			i
 			
 			Foo(arr,size);
+		
 		    
 		}break;
 		case 2:
