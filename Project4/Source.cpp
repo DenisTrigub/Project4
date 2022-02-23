@@ -6,7 +6,7 @@ template <typename T>
 
 int Rand(T x)
 {
-	x = rand() % 10;
+	x =  rand() % 1000 - 250;
 	return x;
 }
 
@@ -16,7 +16,7 @@ void Foo(T arr[], const T size = 60)
 {
 	for (T i = 0; i < size; i++)
 	{
-		arr[i] = rand() % 100 - 1000;
+		arr[i] = Rand(arr[i]);
 		cout << endl;
 		cout << arr[i];
 	}
@@ -30,17 +30,26 @@ int main()
 	const int size = 60;
 	int arr[size];
 	int year = 5;
+	cin >> year;
+	cout << endl;
+    //ввод года
 	switch (year)
 	{
+		
 		//1 year
 	case 1:
 	{
+		// ввод месеца
 		int month = 12;
+		cin >> month;
 		switch (month)
 		{
+
 		case 1:
 		{
-
+			
+			Foo(arr,size);
+		    
 		}break;
 		case 2:
 		{
